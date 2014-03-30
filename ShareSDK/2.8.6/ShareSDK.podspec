@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
       :tag => '2.8.6'
   }
   s.public_header_files = 'ShareSDK.framework/Headers/*.h'
-  s.source_files  = 'ShareSDK.framework/Headers/*.h'
+  s.source_files  = 'ShareSDK.framework/Headers/*.h', 'Extend/**/*.h'
   s.preserve_paths = '*'
   s.frameworks = 'ShareSDK'
   s.license = 'MIT'
