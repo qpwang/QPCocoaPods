@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
   s.platform      = :ios, '6.0'
   s.source        = {
       :git => 'https://github.com/qpwang/FlatDatePicker.git',
-      :commit => 'd82d3bed443642e894d46287862a433cff206869'
+      :tag => '0.1.0'
   }
   s.public_header_files = 'FlatDatePicker/FlatDatePicker/FlatDatePicker.h'
-  s.source_files  = 'FlatDatePicker/FlatDatePicker/.{h,m}'
+  s.source_files  = 'FlatDatePicker/FlatDatePicker/FlatDatePicker.{h,m}'
   s.requires_arc  = true
   s.license = 'MIT'
 
