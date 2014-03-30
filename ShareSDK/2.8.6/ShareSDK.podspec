@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'ShareSDK'
   s.license = 'MIT'
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/ShareSDK"' }
-  s.requires_arc = false
+  s.requires_arc = true
 
 end
 
