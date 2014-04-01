@@ -10,12 +10,12 @@ Pod::Spec.new do |s|
       :git => 'https://github.com/qpwang/ShareSDK.git',
       :tag => '2.8.6'
   }
-  s.public_header_files = 'ShareSDK.framework/Headers/*.h'
   s.source_files  = '*'
-  s.preserve_paths = '*'
+  s.vendored_frameworks = 'ShareSDK.framework', 'Extend/**/*.framework', 'Core/*.framework', 'Connection/*.framework', 'UI/*.framework'
+  s.vendored_libraries = 'Extend/**/*.a'
   s.license = 'MIT'
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/ShareSDK"' }
-  s.requires_arc = true
+  s.requires_arc = false
 
 end
 
